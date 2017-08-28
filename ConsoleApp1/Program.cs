@@ -270,8 +270,6 @@ namespace Hello_Beep
                     Console.Beep(704, 1000);
                     Console.Clear();
                     goto again;
-                default:
-                    break;
             }
         }
     }
