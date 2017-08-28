@@ -11,17 +11,17 @@ namespace Hello_Beep
     {
         static void Main(string[] args)
         {
-            int auswahl = 0;
+            char auswahl;
 
-            again:
+        again:
             Console.WriteLine("Let the Beep Boop fall!\nWähle zwischen verschiedenen Songs aus! \n\n1) Tetris Main Theme \n2) Beverly Hills Cop\n3) Deutsche Nationalhymne\n\n0) Beenden");
-            auswahl = Convert.ToInt32(Console.ReadLine());
+            auswahl = Convert.ToChar(Console.ReadKey().KeyChar);
 
             switch (auswahl)
             {
-                case 0:
+                case '0':
                     break;
-                case 1:
+                case '1':
                     //Tetris
                     Console.Clear();
                     Console.WriteLine("Playing: Tetris Main Theme");
@@ -141,7 +141,7 @@ namespace Hello_Beep
                     Console.Beep(838, 2000);
                     Console.Clear();
                     goto again;
-                case 2:
+                case '2':
                     //Beverly Hills Cop
                     Console.Clear();
                     Console.WriteLine("Playing: Beverly Hills Cop");
@@ -170,7 +170,7 @@ namespace Hello_Beep
                     Console.Beep(676, 980);
                     Console.Clear();
                     goto again;
-                case 3:
+                case '3':
                     //Nationalhymne
                     Console.Clear();
                     Console.WriteLine("Playing: Deutsche Nationalhymne");
